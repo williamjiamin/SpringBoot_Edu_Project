@@ -1,0 +1,296 @@
+<!--Created by william from lexueoude.com. 更多正版技术视频讲解，公众号：乐学FinTech-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>乐学偶得-后台管理页面</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+    <link rel="stylesheet" href="../../static/css/lxod.css">
+</head>
+<body>
+
+<!--头部导航栏-->
+<nav class="ui inverted attached segment m-padding-tb-small">
+    <div class="ui container">
+        <div class="ui inverted secondary stackable menu">
+            <h1 class="ui yellow header item">乐学偶得-管理后台</h1>
+            <a href="#" class="m-special-tag item m-small-screen-hide"><i class="home icon"></i>首页</a>
+            <a href="#" class="m-special-tag item m-small-screen-hide"><i class="book icon"></i>文章分类</a>
+            <a href="#" class="m-special-tag item m-small-screen-hide"><i class="tasks icon"></i>文章标签</a>
+            <a href="#" class="m-special-tag item m-small-screen-hide"><i class="copy icon"></i>历史文章归档</a>
+            <div class="right m-special-tag m-small-screen-hide menu">
+                <div class="ui dropdown item">
+                    <div class="text">
+                        <img src="../../static/images/lxod_logo.jpeg" alt="" class="ui avatar image">
+                        乐学偶得管理员
+                    </div>
+                    <i class="dropdown icon"></i>
+                    <div class="menu">
+                        <a href="#" class="item">个人中心</a>
+                        <a href="#" class="item">会员的世界</a>
+                        <a href="#" class="item">我的积分</a>
+                        <a href="#" class="item">注销</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <a href="#" class="ui menu-toggle black icon button m-icon-position m-small-screen-show">
+        <i class="bars icon"></i>
+    </a>
+</nav>
+<div class="ui attached inverted pointing menu m-shadow-middle">
+    <div class="ui container">
+        <div class="right menu">
+            <a href="#" class="item">内容发布</a>
+            <a href="#" class="active item">列表导航</a>
+        </div>
+    </div>
+
+</div>
+
+
+<!--网站内容部分-->
+
+<div class="m-padding-tb-middle">
+    <div class="ui container">
+        <form action="#" method="post" class="ui segment top attached form">
+            <div class="inline fields">
+                <div class="field">
+                    <input type="text" name="title" placeholder="文章标题">
+                </div>
+                <div class="field">
+                    <div class="ui selection dropdown">
+                        <input type="hidden" name="type">
+                        <i class="dropdown icon"></i>
+                        <div class="default text">分类</div>
+                        <div class="menu">
+                            <div class="item" data-value="1">Java</div>
+                            <div class="item" data-value="2">C/C++</div>
+                            <div class="item" data-value="3">Python</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="field">
+                    <div class="ui checkbox">
+                        <input type="checkbox" id="recommend" name="recommend">
+                        <label for="recommend">乐学偶得推荐</label>
+                    </div>
+                </div>
+                <div class="field">
+                    <button class="ui blue button"><i class="search icon"></i>筛选</button>
+                </div>
+            </div>
+        </form>
+
+        <table class="ui attached table">
+            <thead>
+            <tr>
+                <th>文章编号</th>
+                <th>文章标题</th>
+                <th>文章类型</th>
+                <th>是否推荐</th>
+                <th>发布时间</th>
+                <th>可进行的操作</th>
+            </tr>
+            </thead>
+            <tbody>
+            <td>164528</td>
+            <td>乐学偶得文章标题</td>
+            <td>公众号：乐学Fintech</td>
+            <td>乐学偶得官方推荐</td>
+            <td>2022年2月2日 12：22</td>
+            <td>
+                <a href="#" class="ui blue button">更新文章</a>
+                <a href="#" class="ui red button">删除文章</a>
+            </td>
+            </tbody>
+            <tbody>
+            <td>164528</td>
+            <td>乐学偶得文章标题</td>
+            <td>公众号：乐学Fintech</td>
+            <td>乐学偶得官方推荐</td>
+            <td>2022年2月2日 12：22</td>
+            <td>
+                <a href="#" class="ui blue button">更新文章</a>
+                <a href="#" class="ui red button">删除文章</a>
+            </td>
+            </tbody>
+            <tbody>
+            <td>164528</td>
+            <td>乐学偶得文章标题</td>
+            <td>公众号：乐学Fintech</td>
+            <td>乐学偶得官方推荐</td>
+            <td>2022年2月2日 12：22</td>
+            <td>
+                <a href="#" class="ui blue button">更新文章</a>
+                <a href="#" class="ui red button">删除文章</a>
+            </td>
+            </tbody>
+            <tbody>
+            <td>164528</td>
+            <td>乐学偶得文章标题</td>
+            <td>公众号：乐学Fintech</td>
+            <td>乐学偶得官方推荐</td>
+            <td>2022年2月2日 12：22</td>
+            <td>
+                <a href="#" class="ui blue button">更新文章</a>
+                <a href="#" class="ui red button">删除文章</a>
+            </td>
+            </tbody>
+            <tbody>
+            <td>144452</td>
+            <td>乐学偶得文章标题</td>
+            <td>公众号：乐学Fintech</td>
+            <td>乐学偶得官方推荐</td>
+            <td>2022年2月2日 12：22</td>
+            <td>
+                <a href="#" class="ui blue button">更新文章</a>
+                <a href="#" class="ui red button">删除文章</a>
+            </td>
+            </tbody>
+            <tbody>
+            <td>145475</td>
+            <td>乐学偶得文章标题</td>
+            <td>公众号：乐学Fintech</td>
+            <td>乐学偶得官方推荐</td>
+            <td>2022年2月2日 12：22</td>
+            <td>
+                <a href="#" class="ui blue button">更新文章</a>
+                <a href="#" class="ui red button">删除文章</a>
+            </td>
+            </tbody>
+            <tbody>
+            <td>145242</td>
+            <td>乐学偶得文章标题</td>
+            <td>公众号：乐学Fintech</td>
+            <td>乐学偶得官方推荐</td>
+            <td>2022年2月2日 12：22</td>
+            <td>
+                <a href="#" class="ui blue button">更新文章</a>
+                <a href="#" class="ui red button">删除文章</a>
+            </td>
+            </tbody>
+            <tbody>
+            <td>175424</td>
+            <td>乐学偶得文章标题</td>
+            <td>公众号：乐学Fintech</td>
+            <td>乐学偶得官方推荐</td>
+            <td>2022年2月2日 12：22</td>
+            <td>
+                <a href="#" class="ui blue button">更新文章</a>
+                <a href="#" class="ui red button">删除文章</a>
+            </td>
+            </tbody>
+            <tbody>
+            <td>152485</td>
+            <td>乐学偶得文章标题</td>
+            <td>公众号：乐学Fintech</td>
+            <td>乐学偶得官方推荐</td>
+            <td>2022年2月2日 12：22</td>
+            <td>
+                <a href="#" class="ui blue button">更新文章</a>
+                <a href="#" class="ui red button">删除文章</a>
+            </td>
+            </tbody>
+            <tbody>
+            <td>18475</td>
+            <td>乐学偶得文章标题</td>
+            <td>公众号：乐学Fintech</td>
+            <td>乐学偶得官方推荐</td>
+            <td>2022年2月2日 12：22</td>
+            <td>
+                <a href="#" class="ui blue button">更新文章</a>
+                <a href="#" class="ui red button">删除文章</a>
+            </td>
+            </tbody>
+            <tfoot>
+            <tr>
+                <th colspan="20">
+                    <div class="ui pagination menu">
+                        <a class="item">上一页</a>
+                        <a class="item">下一页</a>
+                    </div>
+                    <a href="#" class="ui right floated blue button">新增内容</a>
+                </th>
+
+            </tr>
+
+            </tfoot>
+        </table>
+
+    </div>
+</div>
+
+
+<!--底部（ICP备案、联系方式等）-->
+<!--可以用attached或者vertical-->
+<footer class="ui inverted vertical segment m-padding-tb-big">
+    <div class="ui center aligned container">
+        <div class="ui inverted divided stackable grid">
+            <div class="three wide column">
+                <div class="ui inverted link list">
+                    <div class="item">
+                        <img src="../../static/images/wechat.jpg" class="ui rounded image" style="width: 90px" alt="图片">
+                    </div>
+                    <div class="item">乐学Fintech</div>
+                    <div class="item">
+                        <img src="../../static/images/lxodxgj_wechat.jpeg" class="ui rounded image" style="width: 90px"
+                             alt="图片">
+                    </div>
+                    <div class="item">客服小管家</div>
+                </div>
+
+            </div>
+            <div class="four wide column">
+                <h4 class="ui inverted header m-content-text-thin m-content-text-lined m-content-text-opacity m-content-text-spaced">
+                    网站导航</h4>
+                <div class="ui inverted link list">
+                    <a href="#" class="item">首页</a>
+                    <a href="#" class="item">文章分类</a>
+                    <a href="#" class="item">文章标签</a>
+                    <a href="#" class="item">关于我们</a>
+                </div>
+            </div>
+            <div class="four wide column">
+                <h4 class="ui inverted header m-content-text-thin m-content-text-lined m-content-text-opacity m-content-text-spaced">
+                    联系我们</h4>
+                <div class="ui inverted link list">
+                    <a href="#" class="item">联系方式</a>
+                    <a href="#" class="item">办公地址</a>
+                    <a href="#" class="item">加入我们</a>
+                    <a href="#" class="item">地图导航</a>
+                </div>
+            </div>
+            <div class="five wide column">
+                <h4 class="ui inverted header m-content-text-thin m-content-text-lined m-content-text-opacity m-content-text-spaced">
+                    网站介绍</h4>
+                <div class="ui inverted link list">
+                    <p class="m-content-text-thin m-content-text-lined m-content-text-opacity m-content-text-spaced">
+                        这个是乐学偶得的教程演示网站，可以达到发表文章，文章留言回复，二维码打赏、支付等功能</p>
+                </div>
+            </div>
+        </div>
+        <div class="ui inverted section divider"></div>
+        <p class="m-content-text-thin m-content-text-lined m-content-text-opacity m-content-text-spaced">
+            乐学偶得版权所有，乐学偶得官网lexueoude.com，公众号：乐学Fintech</p>
+        <p class="m-content-text-thin m-content-text-lined m-content-text-opacity m-content-text-spaced">ICP备案号：【】</p>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.2/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+<script>
+    $('.menu-toggle').click(function () {
+        $('.m-special-tag').toggleClass('m-small-screen-hide');
+    });
+
+    $('.ui.dropdown').dropdown({
+        on: 'hover'
+    });
+</script>
+
+</body>
+</html>

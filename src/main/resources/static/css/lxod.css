@@ -1,0 +1,154 @@
+/*Created by william from lexueoude.com. 更多正版技术视频讲解，公众号：乐学FinTech*/
+body{
+    /*background: url("../images/wallpaper.png");*/
+    /*background: url("../images/Test1.jpeg");*/
+    /*background: url("../images/Test2.jpeg");*/
+    /*background: url("../images/Test3.jpeg");*/
+    background: url("../images/Test4.jpeg");
+
+}
+
+
+/*位置样式*/
+
+.m-fixed{
+    position: fixed !important;
+    z-index: 3 !important;
+}
+
+.m-right-bottom{
+    right: 0 !important;
+    bottom: 0 !important;
+}
+
+
+/*整体padding部分样式*/
+
+.m-padding-tb-small{
+    padding-top: 1px !important;
+    padding-bottom: 1px !important;
+}
+
+.m-padding-tb-middle{
+    padding-top: 20px !important;
+    padding-bottom: 20px !important;
+}
+
+.m-padding-tb-big{
+    padding-top: 80px !important;
+    padding-bottom: 100px !important;
+}
+
+.m-padding-lr-small{
+    padding-left: 1em !important;
+    padding-right: 1em !important;
+}
+
+.m-padding-lr-responsive{
+    padding-left: 8em !important;
+    padding-right: 8em !important;
+}
+
+
+/*banner的阴影部分*/
+
+.m-shadow-middle{
+    -webkit-box-shadow: rgba(0,0,0,0.20) 5px 5px !important;
+    box-shadow: rgba(0,0,0,0.20) 5px 5px !important;
+}
+
+/*内容文字部分的样式*/
+
+.m-all-normal-text{
+    font-weight: 400 !important;
+    letter-spacing: 1.5px !important;
+    line-height: 1.5 !important;
+    opacity: 0.6 !important;
+
+}
+
+.m-content-text-thin{
+    font-weight: 400 !important;
+}
+
+.m-content-text-spaced{
+    letter-spacing: 2px !important;
+}
+
+.m-content-text-lined{
+    line-height: 2 !important;
+}
+
+.m-content-text-opacity{
+    opacity: 0.6 !important;
+}
+
+/*block块内的样式*/
+
+.m-block-inline{
+    display: inline-block !important;
+}
+
+
+/*自定义容器*/
+
+.m-container{
+    max-width: 80em !important;
+    margin: auto; !important;
+}
+
+.m-container-small{
+    max-width: 60em !important;
+    margin: auto; !important;
+}
+
+
+
+/*tag的padding设置*/
+
+.m-tags-margin-tb-big{
+    margin-top: 1em !important;
+    margin-bottom: 1em !important;
+}
+
+.m-tags-margin-tb-small{
+    margin-top: 0.5em !important;
+    margin-bottom: 0.5em !important;
+}
+
+.m-margin-bottom-tiny{
+    margin-bottom: 0.3em !important;
+}
+
+/*将需要的文字编程黑色*/
+.m-font-black{
+    color: black;
+}
+
+/*nav bar手机版位置*/
+.m-icon-position{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+
+.m-small-screen-show{
+    display: none !important;
+}
+
+@media screen and (max-width: 800px){
+    .m-small-screen-hide{
+        display: none !important;
+    }
+    .m-small-screen-show{
+        display: block !important;
+    }
+    .m-padding-lr-responsive{
+        padding-right: 0 !important;
+        padding-left: 0 !important;
+    }
+    .m-small-screen-bottom-wide{
+        width: 100% !important;
+    }
+}
