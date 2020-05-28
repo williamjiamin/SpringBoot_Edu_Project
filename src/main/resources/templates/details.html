@@ -1,8 +1,8 @@
 <!--Created by william from lexueoude.com. 更多正版技术视频讲解，公众号：乐学FinTech-->
 
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head th:replace="_fragments :: head(~{::title})">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>乐学偶得-详情页面</title>
@@ -18,7 +18,7 @@
 <body>
 
 <!--头部导航栏-->
-<nav class="ui inverted attached segment m-padding-tb-small">
+<nav th:replace="_fragments :: menu(2)"  class="ui inverted attached segment m-padding-tb-small">
     <div class="ui container">
         <div class="ui inverted secondary stackable menu">
             <h1 class="ui yellow header item">乐学偶得</h1>
@@ -923,7 +923,7 @@ h5,h6{font-size:1em;}
 
 <!--底部（ICP备案、联系方式等）-->
 <!--可以用attached或者vertical-->
-<footer class="ui inverted vertical segment m-padding-tb-big">
+<footer th:replace="_fragments :: footer" class="ui inverted vertical segment m-padding-tb-big">
     <div class="ui center aligned container">
         <div class="ui inverted divided stackable grid">
             <div class="three wide column">
@@ -975,16 +975,16 @@ h5,h6{font-size:1em;}
         <p class="m-content-text-thin m-content-text-lined m-content-text-opacity m-content-text-spaced">ICP备案号：【】</p>
     </div>
 </footer>
+<!--/*/<th:block th:replace="_fragments :: script">/*/-->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.2/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery.scrollto@2.1.2/jquery.scrollTo.min.js"></script>
 
-<script src="https://cdn.jsdelivr.net/npm/jquery@3.2/dist/jquery.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/jquery.scrollto@2.1.2/jquery.scrollTo.min.js"></script>
-
-<script src="../static/lib/prism/prism.js"></script>
-<script src="../static/lib/tocbot/tocbot.js"></script>
-<script src="../static/lib/qrcode/qrcode.js"></script>
-<script src="../static/lib/waypoints/jquery.waypoints.js"></script>
-
+    <script src="../static/lib/prism/prism.js"></script>
+    <script src="../static/lib/tocbot/tocbot.js"></script>
+    <script src="../static/lib/qrcode/qrcode.js"></script>
+    <script src="../static/lib/waypoints/jquery.waypoints.js"></script>
+<!--/*/</th:block>/*/-->
 
 <script>
     $('.menu-toggle').click(function () {

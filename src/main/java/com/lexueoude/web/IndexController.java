@@ -8,10 +8,10 @@ import org.springframework.web.bind.annotation.PathVariable;
 @Controller
 public class IndexController {
 
-//    @GetMapping("/{id}/{name}")做传参测试
+    //    @GetMapping("/{id}/{name}")做传参测试
     @GetMapping("/")
 //    public String index(@PathVariable Integer id, @PathVariable String name)做传参测试
-    public String index(){
+    public String index() {
 //        假设代码里有问题，会跳500
 //        int x = 888/0;
 
@@ -25,6 +25,11 @@ public class IndexController {
 //        System.out.println("~~~~~~~~~~index~~~~~~~~~~~~")做传参测试;
 
         return "index";
+    }
+
+    @GetMapping("/details")
+    public String details() {
+        return "details";
     }
 
 }
